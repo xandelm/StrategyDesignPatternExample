@@ -14,5 +14,16 @@ public class Calculadora {
         double numero1=20, numero2=25;
         System.out.println(numero1 + " + " + numero2 + " = " + context.executaStrategy(numero1, numero2));
         
+        //context = new Context(new Dividir());
+        context.setStrategy(new Dividir());
+        numero1 = 90; numero2 = 3;
+        System.out.println(context.executaStrategy(numero1, numero2));
+        
+        
+        context.setStrategy(new Exponencial());
+        numero1 = 2; numero2 = 3;
+        System.out.println(context.executaStrategy(numero1, numero2));
+        
+        
     }
 }

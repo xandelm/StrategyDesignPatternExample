@@ -14,6 +14,11 @@ public class Context {
     public Context(Strategy strategy) {
         this.strategy = strategy;
     }
+
+    public void setStrategy(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
     
     public double executaStrategy(double num1, double num2){
         return strategy.operacao(num1, num2);
