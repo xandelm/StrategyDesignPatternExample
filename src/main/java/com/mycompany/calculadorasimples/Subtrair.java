@@ -11,7 +11,7 @@ package com.mycompany.calculadorasimples;
 public class Subtrair implements Strategy{
 
     @Override
-    public int operacao(int num1, int num2) {
+    public double operacao(double num1, double num2) {
         return num1 - num2;
     }
     

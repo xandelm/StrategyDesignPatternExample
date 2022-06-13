@@ -9,5 +9,5 @@ package com.mycompany.calculadorasimples;
  * @author Xande
  */
 public interface Strategy {
-    public int operacao(int num1, int num2);
+    public double operacao(double num1, double num2);
 }

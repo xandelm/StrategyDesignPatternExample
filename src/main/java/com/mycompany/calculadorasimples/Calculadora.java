@@ -8,15 +8,11 @@ package com.mycompany.calculadorasimples;
  *
  * @author Xande
  */
-public class Context {
-    private Strategy strategy;
-
-    public Context(Strategy strategy) {
-        this.strategy = strategy;
+public class Calculadora {
+    public static void main(String[] args) {
+        Context context = new Context(new Adicionar());
+        double numero1=20, numero2=25;
+        System.out.println(numero1 + " + " + numero2 + " = " + context.executaStrategy(numero1, numero2));
+        
     }
-    
-    public double executaStrategy(double num1, double num2){
-        return strategy.operacao(num1, num2);
-    }
-    
 }
